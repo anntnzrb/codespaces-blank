@@ -50,4 +50,16 @@ asiáticos) y las puntuaciones promedio de SAT en matemáticas, lectura y
 escritura. Este análisis podría proporcionar una visión valiosa sobre la equidad
 en el rendimiento académico entre diferentes grupos étnicos.
 
+#pagebreak()
+
+= Anexos
+
+== Código Fuente
+
+El código fuente de este proyecto se encuentra disponible en el siguiente
+#link("https://github.com/anntnzrb/estg1034-proy")[enlance a GitHub] \
+`<https://github.com/anntnzrb/estg1034-proy>`.
+
+#pagebreak()
+
 #bibliography("bib.bib", style: "apa")
