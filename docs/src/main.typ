@@ -3,13 +3,12 @@
 #show: project.with(
   title: "Proyecto de Estadística",
   authors: (
-    (name: "Juan Antonio González", email: "juangonz@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
-    (name: "ABC", email: "@espol.edu.ec", affiliation: "ESPOL ()"),
-    (name: "ABC", email: "@espol.edu.ec", affiliation: "ESPOL ()"),
-    (name: "ABC", email: "@espol.edu.ec", affiliation: "ESPOL ()"),
-    (name: "ABC", email: "@espol.edu.ec", affiliation: "ESPOL ()"),
+    (name: "Juan Antonio González",      email: "juangonz@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
+    (name: "Gary Steven Flores",         email: "gsflores@espol.edu.ec", affiliation: "ESPOL (FIMCM)"),
+    (name: "Gabriel Cañarte Lucio",      email: "lcanarte@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
+    (name: "Ramón Ignacio Macías Ochoa", email: "rimacias@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
   ),
-  date: "January 6, 2024",
+  date: "Enero 6, 2024",
 )
 
 = Introduction
