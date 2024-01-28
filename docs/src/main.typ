@@ -11,14 +11,14 @@
   )
 )
 
-= Introduction
+= Introducción
 
 El presente informe se enfoca en el análisis de las puntuaciones SAT en las
-escuelas de Nueva York. La elección de este conjunto de datos se basa en la
-relevancia y el impacto que tienen estas puntuaciones en la educación y el
-futuro de los estudiantes en la ciudad de Nueva York, Estados Unidos.
-El análisis de estas puntuaciones puede proporcionar información valiosa sobre
-la calidad de la educación en diferentes escuelas y distritos, lo que puede ser
+escuelas del estado de Nueva York. La elección de este conjunto de datos se basa
+en la relevancia y el impacto que tienen estas puntuaciones en la educación y el
+futuro de los estudiantes en la ciudad de Nueva York, Estados Unidos.  El
+análisis de estas puntuaciones puede proporcionar información valiosa sobre la
+calidad de la educación en diferentes escuelas y distritos, lo que puede ser
 útil para los responsables de la toma de decisiones en el ámbito de la
 educación.
 
