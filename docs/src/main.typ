@@ -130,6 +130,12 @@ puntuaciones que se desvían significativamente del resto de los datos.
   caption: "Histograma de estudiantes testados",
 )
 
+La gráfica de estilo histograma anterior representa la distribución de los
+porcentajes de estudiantes que realizaron la prueba *SAT*. La mayor frecuencia
+de estudiantes testados se encuentra en el rango de `0.5` a `0.7`. Con respecto
+a la distribución de los datos, se encuentra una distribución no uniforme, con
+un comportamiento irregular.
+
 #pagebreak()
 
 == Variables Cualitativas
@@ -141,11 +147,24 @@ puntuaciones que se desvían significativamente del resto de los datos.
   caption: "Gráfico de pastel de la variable cualitativa Borough",
 )
 
-El gráfico de pastel presentado muestra una representación visual detallada de la distribución porcentual de la población en los cinco distritos de la ciudad de `Nueva York`, que son `Brooklyn`, `Bronx`, `Manhattan`, `Queens` y `Staten Island`. Cada segmento del gráfico de pastel representa un distrito y su tamaño es proporcional al porcentaje de la población que reside en ese distrito.
-`Brooklyn`, con el `29,07%` de la población, tiene la mayor proporción, lo que se refleja en el segmento más grande del gráfico de pastel. Esto indica que `Brooklyn` es el distrito más poblado de la ciudad de `Nueva York`. El `Bronx`, con el `26,13%` de la población, tiene el segundo segmento más grande del gráfico de pastel, lo que indica que también es un distrito densamente poblado.
-`Manhattan`, tiene el tercer segmento más grande en el gráfico de pastel, representando el `23,73%` de la población. `Queens`, tiene el cuarto segmento más grande en el gráfico de pastel, representando el `18,40%` de la población.
-`Staten Island`, tiene el segmento más pequeño en el gráfico de pastel, representando solo el `2,67%` de la población. Esto indica que `Staten Island` tiene la menor densidad de población entre los cinco distritos.
-La suma total de las proporciones es del `100,00%`, lo que indica que todos los distritos de la ciudad de Nueva York están representados en este gráfico.
+El gráfico de pastel presentado muestra una representación visual detallada de
+la distribución porcentual de la población en los cinco distritos de la ciudad
+de `Nueva York`, que son `Brooklyn`, `Bronx`, `Manhattan`, `Queens` y `Staten
+Island`. Cada segmento del gráfico de pastel representa un distrito y su tamaño
+es proporcional al porcentaje de la población que reside en ese distrito.
+`Brooklyn`, con el `29,07%` de la población, tiene la mayor proporción, lo que
+se refleja en el segmento más grande del gráfico de pastel. Esto indica que
+`Brooklyn` es el distrito más poblado de la ciudad de `Nueva York`. El `Bronx`,
+con el `26,13%` de la población, tiene el segundo segmento más grande del
+gráfico de pastel, lo que indica que también es un distrito densamente poblado.
+`Manhattan`, tiene el tercer segmento más grande en el gráfico de pastel,
+representando el `23,73%` de la población. `Queens`, tiene el cuarto segmento
+más grande en el gráfico de pastel, representando el `18,40%` de la población.
+`Staten Island`, tiene el segmento más pequeño en el gráfico de pastel,
+representando solo el `2,67%` de la población. Esto indica que `Staten Island`
+tiene la menor densidad de población entre los cinco distritos.  La suma total
+de las proporciones es del `100,00%`, lo que indica que todos los distritos de
+la ciudad de Nueva York están representados en este gráfico.
 
 #pagebreak()
 
@@ -230,19 +249,53 @@ en el examen SAT.
 
 = Conclusiones
 
-A partir de los datos obtenidos en el análisis *ANOVA* se puede concluir que la
-ciudad de residencia de los estudiantes influye de manera significativa en el
-rendimiento promedio del examen *SAT*. No obstante, es importante tener en
-cuenta que aún hay un alto porcentaje de variabilidad que no puede ser explicado
-por la ciudad de residencia. Lo anterior sugiere que existen otros factores que
-también pueden influir en el rendimiento en el examen *SAT*.
+== Correlación entre la diversidad étnica y las puntuaciones SAT
 
-Se concluye una correlación positiva entre las puntuaciones *SAT* y los
-porcentajes de estudiantes blancos y asiáticos, lo que indica que estos grupos
-tienden a obtener puntuaciones más altas en el SAT. Por otro lado, se ha
-observado una correlación negativa entre las puntuaciones SAT y el porcentaje de
-estudiantes negros, lo que sugiere que este grupo tiende a obtener puntuaciones
-más bajas en el SAT.
+En base a los resultados obtenidos, con respecto al objetivo *1*, se extraen las
+siguientes conclusiones. En primer lugar, se puede afirma que existe una
+significativa correlación entre la diversidad étnica y las puntuaciones \*SAT\*.
+De forma específica, se encontró una correlación positiva entre el porcentaje de
+estudiantes blancos, asiáticos y las puntuaciones promedio del \*SAT\*. Esto
+indica que a medida que aumenta el porcentaje de estos grupos étnicos, también
+lo hacen las puntuaciones del \*SAT\*. Sin embargo, se observó una correlación
+negativa entre el porcentaje de estudiantes negros y las puntuaciones promedio
+del \*SAT\*, lo que sugiere que a medida que aumenta el porcentaje de
+estudiantes negros, las puntuaciones del \*SAT\* tienden a disminuir.
+
+De igual manera, se aprecia una correlación negativa entre el porcentaje de
+estudiantes blancos y negros, indicando que en las escuelas con un alto
+porcentaje de estudiantes blancos, hay un porcentaje más bajo de estudiantes
+negros, y viceversa. También, se ha concluido una correlación positiva entre el
+porcentaje de estudiantes blancos y asiáticos, lo que sugiere que en las
+escuelas con un alto porcentaje de estudiantes blancos, también hay un alto
+porcentaje de estudiantes asiáticos.
+
+A partir del primer objetivo se concluye que se ha identificado una relación
+entre la diversidad étnica y las puntuaciones del *SAT*. Es posible que existan
+otros factores no considerados en este estudio que puedan influir en la relación
+entre la diversidad étnica y las puntuaciones del *SAT*.
+
+#pagebreak()
+
+== Análisis de varianza entre promedios SAT y ubicación
+
+El análisis de varianza *ANOVA* realizado reveló una diferencia significativa
+entre las los promedios del SAT y la ciudad de residencia. Según los datos
+obtenidos, se puede concluir que la ciudad de residencia de los estudiantes
+influye de manera significativa en el rendimiento promedio del examen SAT.
+Afirmarmand con seguridad que existe una relación entre los promedios SAT y las
+residencias.
+
+Es importante tener en cuenta que aún hay un alto porcentaje de variabilidad que
+no puede ser explicado a partir de la ciudad de residencia. Esto sugiere que
+existen otros factores que también pueden influir en el rendimiento en el examen
+SAT. Por lo tanto, aunque la ciudad de residencia es un factor importante, no es
+el único que determina el rendimiento de los estudiantes en el examen SAT.
+
+Se logra concluir que se ha identificado algunas tendencias y patrones en las
+puntuaciones SAT en función de la ubicación geográfica. Sin embargo, es posible
+que existan otros factores no considerados en este estudio que puedan influir en
+las puntuaciones SAT.
 
 #pagebreak()
 
