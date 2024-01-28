@@ -7,8 +7,8 @@
     (name: "Gary Steven Flores",         email: "gsflores@espol.edu.ec", affiliation: "ESPOL (FIMCM)"),
     (name: "Gabriel Cañarte Lucio",      email: "lcanarte@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
     (name: "Ramón Ignacio Macías Ochoa", email: "rimacias@espol.edu.ec", affiliation: "ESPOL (FIEC)"),
-  ),
-  date: "Enero 6, 2024",
+    (name: "Germán David Correa",        email: "gdcorrea@espol.edu.ec", affiliation: "ESPOL (FIMCM)"),
+  )
 )
 
 = Introduction
@@ -29,25 +29,113 @@ grupos étnicos. Además, se proporcionan las puntuaciones promedio de SAT en
 asignaturas como matemáticas, lectura y escritura, así como el porcentaje de
 estudiantes que realizaron la prueba.
 
+#pagebreak()
+
 = Objetivos
 
-== Identificar diferencias en las puntuaciones SAT en función de la ubicación geográfica
+#v(1em)
 
-Este objetivo busca identificar si existen diferencias significativas en las
-puntuaciones SAT entre diferentes escuelas y distritos, utilizando las
-coordenadas de latitud y longitud para determinar la ubicación geográfica de las
-escuelas. Este análisis podría proporcionar información sobre qué regiones
-geográficas están obteniendo un rendimiento superior y cuáles podrían necesitar
-intervenciones o apoyos adicionales para mejorar el rendimiento académico de sus
-estudiantes.
+== Objetivo General
 
-== Investigar la correlación entre la diversidad étnica y las puntuaciones SAT
+Evaluar las puntuaciones SAT en las escuelas de Nueva York y determinar si
+existen diferencias significativas en las puntuaciones en función de la
+ubicación geográfica y la diversidad étnica.
 
-Este objetivo busca explorar si existe una correlación entre la diversidad
-étnica en las escuelas (porcentajes de estudiantes blancos, negros y
-asiáticos) y las puntuaciones promedio de SAT en matemáticas, lectura y
-escritura. Este análisis podría proporcionar una visión valiosa sobre la equidad
-en el rendimiento académico entre diferentes grupos étnicos.
+#v(1em)
+
+== Objetivos Específicos
+
+#v(1em)
+
+1. Identificar diferencias en las puntuaciones SAT en función de la ubicación geográfica
+2. Investigar la correlación entre la diversidad étnica y las puntuaciones SAT
+3. XYZ
+
+#pagebreak()
+
+= Metodología
+
+#figure(
+  image("./assets/graf_bar_frec_cities.png", width: 100%),
+  caption: "Gráfico de barras de frecuencias de la variable cualitativa City.",
+)
+
+#figure(
+  image("./assets/graf_caja_porc_etnias.png", width: 100%),
+  caption: "Diagrama de cajas de los porcentajes de estudiantes blancos, negros y asiáticos.",
+)
+
+#figure(
+  image("./assets/graf_caja_sat_avg.png", width: 100%),
+  caption: "Diagrama de cajas de los promedios de la masterias SAT.",
+)
+
+#figure(
+  image("./assets/graf_hist_est_test.png", width: 100%),
+  caption: "Histograma de estudiantes testados",
+)
+
+#figure(
+  image("./assets/graf_pastel_borough.png", width: 100%),
+  caption: "Gráfico de pastel de la variable cualitativa Borough",
+)
+
+#pagebreak()
+
+= Análisis y Resultados
+
+== Análisis de Correlación entre el promedio SAT y etnias
+
+#figure(
+  image("./assets/graf_correlacion1.png", width: 70%),
+  caption: "Gráfico de correlación #1",
+)
+
+#figure(
+  image("./assets/graf_correlacion2.png", width: 80%),
+  caption: "Gráfico de correlación #2",
+)
+
+#pagebreak()
+
+En la Figura *7* se presentan los resultados de la correlación entre las
+variables `Average_SAT`, `Percent_White`, `Percent_Black` y `Percent_Asian`. 
+Se puede observar que la correlación entre `Average_SAT` y `Percent_White` es
+positiva con un valor de `0.6234902`, lo que indica que existe una relación
+directa entre estas dos variables. Por otro lado, la correlación entre
+`Average_SAT` y `Percent_Black` es negativa con un valor de `-0.3048109`, lo que
+sugiere una relación inversa entre ambas variables. Así mismo, se puede apreciar
+que la correlación entre `Average_SAT` y `Percent_Asian` es positiva con un
+valor de `0.6098355`, lo que indica una relación directa entre estas dos
+variables. Por último, la correlación entre `Percent_White` y `Percent_Black` es
+negativa con un valor de `-0.4220592`, mientras que la correlación entre
+`Percent_White` y `Percent_Asian` es positiva con un valor de `0.3555783`.
+
+Estos resultados muestran que existe una relación entre las variables analizadas
+y que es importante tener en cuenta su impacto en los resultados del *SAT*.
+
+#pagebreak()
+
+== ANOVA ONE WAY entre variables promedio SAT y City
+
+#v(1em)
+
+#figure(
+  image("./assets/anova.png", width: 90%),
+  caption: "Resultados del ANOVA ONE WAY entre variables promedio SAT y City",
+)
+
+La figura anterior muestra el análisis de los resultados del ANOVA en donde se
+revela una diferencia significativa entre las variables `Average_SAT` y `City`.
+
+Según los datos obtenidos, se puede concluir que la ciudad de residencia de los
+estudiantes influye de manera significativa en el rendimiento promedio del
+examen *SAT*. Con un valor de `F` de `2.854` y un `p-valor` de `1.45e-05`, se
+puede afirmar con seguridad que existe una relación entre ambas variables. Pese
+a esto, es importante tener en cuenta que aún hay un alto porcentaje de
+variabilidad que no puede ser explicado por la ciudad de residencia, lo cual
+sugiere que existen otros factores que también pueden influir en el rendimiento
+en el examen SAT.
 
 #pagebreak()
 

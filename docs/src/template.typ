@@ -20,12 +20,12 @@
   // The page can contain a logo if you pass one with `logo: "logo.png"`.
   v(0.6fr)
   if logo != none {
-    image("assets/espol_fcnm_logo.png", width: 96%)
+    image("assets/espol_logo.png", width: 90%)
   }
   
   v(15em)
 
-  text(1.1em, "Enero 30, 2024")
+  text(1.1em, "Enero 29, 2024")
   v(1.2em, weak: true)
   text(2em, weight: 700, title)
 
@@ -50,6 +50,15 @@
 
   // Table of contents.
   outline(depth: 3, indent: true)
+
+  pagebreak()
+
+  outline(
+    title: [Índice de Figuras],
+    indent: true,
+    target: figure.where(kind: image),
+  )
+
   pagebreak()
 
 

@@ -1,6 +1,8 @@
 library(readr)
 library(dplyr)
 library(ggplot2)
+library(readxl)
+library(PerformanceAnalytics)
 
 data <- read_csv("./data/nyc_scores.csv")
 
@@ -43,3 +45,12 @@ hist(data$Percent_Tested,
   ylab = "Frecuencia",
   col = "#99cfe0"
 )
+
+data_avg_sat <- read_csv("./data/avg_sat.csv")
+
+plot(data_avg_sat)
+cor(data_avg_sat)
+chart.Correlation(data_avg_sat, histogram = FALSE, pch = 5)
+
+resultado_anova <- aov(data$Average_SAT ~ data$City, data = data)
+print(summary(resultado_anova))
