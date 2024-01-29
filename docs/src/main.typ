@@ -49,7 +49,8 @@ ubicación geográfica y la diversidad étnica.
 
 1. Identificar diferencias en las puntuaciones SAT en función de la ubicación geográfica
 2. Investigar la correlación entre la diversidad étnica y las puntuaciones SAT
-3. XYZ
+3. Encontrar la relación entre el tamaño de la población estudiantil y las puntuaciones SAT utilizando
+regresión lineal
 
 #pagebreak()
 
