@@ -247,55 +247,71 @@ en el examen SAT.
 
 #pagebreak()
 
-= Conclusiones
+== Exploración de la Relación entre el tamaño de la población estudiantil y las puntuaciones SAT mediante regresión lineal
 
-== Correlación entre la diversidad étnica y las puntuaciones SAT
+#figure(
+  image("./assets/graf_Average_Score_Math.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Math",
+)
 
-En base a los resultados obtenidos, con respecto al objetivo *1*, se extraen las
-siguientes conclusiones. En primer lugar, se puede afirma que existe una
-significativa correlación entre la diversidad étnica y las puntuaciones \*SAT\*.
-De forma específica, se encontró una correlación positiva entre el porcentaje de
-estudiantes blancos, asiáticos y las puntuaciones promedio del \*SAT\*. Esto
-indica que a medida que aumenta el porcentaje de estos grupos étnicos, también
-lo hacen las puntuaciones del \*SAT\*. Sin embargo, se observó una correlación
-negativa entre el porcentaje de estudiantes negros y las puntuaciones promedio
-del \*SAT\*, lo que sugiere que a medida que aumenta el porcentaje de
-estudiantes negros, las puntuaciones del \*SAT\* tienden a disminuir.
+#figure(
+  image("./assets/graf_Average_Score_Reading.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Reading",
+)
 
-De igual manera, se aprecia una correlación negativa entre el porcentaje de
-estudiantes blancos y negros, indicando que en las escuelas con un alto
-porcentaje de estudiantes blancos, hay un porcentaje más bajo de estudiantes
-negros, y viceversa. También, se ha concluido una correlación positiva entre el
-porcentaje de estudiantes blancos y asiáticos, lo que sugiere que en las
-escuelas con un alto porcentaje de estudiantes blancos, también hay un alto
-porcentaje de estudiantes asiáticos.
+#figure(
+  image("./assets/graf_Average_Score_Writing.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Writing",
+)
 
-A partir del primer objetivo se concluye que se ha identificado una relación
-entre la diversidad étnica y las puntuaciones del *SAT*. Es posible que existan
-otros factores no considerados en este estudio que puedan influir en la relación
-entre la diversidad étnica y las puntuaciones del *SAT*.
+El objetivo es aplicar técnicas de regresión lineal para examinar la relación entre el tamaño de la matrícula estudiantil y las puntuaciones promedio en los exámenes SAT de matemáticas, lectura y escritura.  La regresión lineal proporciona un enfoque sistemático para modelar la dependencia entre estas variables, permitiendo obtener coeficientes clave como la pendiente e intercepto. 
+
+A través de cálculos y análisis realizados en el entorno estadístico R, se determinarán los parámetros fundamentales de cada modelo de regresión lineal. Estos parámetros se traducirán en ecuaciones lineales específicas que describirán la relación cuantitativa entre el tamaño de la matrícula y el desempeño académico en diferentes áreas. 
+
+Las rectas obtenidas son las siguientes:
+
+Para la puntuación promedio de Matemáticas se tiene `y = 4.88x -1349`.
+
+Para la puntuación promedio de Lectura se tiene `y = 4.59x -1183.83`.
+
+Para la puntuación promedio de Escritura se tiene `y = 4.424x -1086.576`.
+
+Al evaluar las ecuaciones de regresión lineal para las puntuaciones promedio de Matemáticas, Lectura y Escritura en relación con el tamaño de la matrícula estudiantil, observamos una tendencia inesperada pero consistente: todas muestran una relación positiva. En el caso de Matemáticas, la pendiente positiva de `y = 4.88x -1349` sugiere que, a medida que aumenta la matrícula, las puntuaciones promedio de Matemáticas tienden a mejorar. Esta dinámica también se refleja en las otras dos áreas evaluadas, donde tanto Lectura (`y = 4.59x -1183.83`) como Escritura (`y = 4.424x -1086.576`) muestran la misma inclinación positiva.
+
+Más allá de la sorprendente tendencia positiva con respecto al tamaño de la matrícula, es crucial considerar otros factores que podrían estar influyendo en estas relaciones. Elementos como la calidad de la enseñanza, recursos educativos disponibles y programas de apoyo podrían estar contribuyendo al rendimiento académico en formas complejas. Además, se podría explorar la posibilidad de variaciones regionales o socioeconómicas que podrían impactar la relación entre el tamaño de la población estudiantil y el éxito académico.
 
 #pagebreak()
 
+= Conclusiones
+
 == Análisis de varianza entre promedios SAT y ubicación
 
-El análisis de varianza *ANOVA* realizado reveló una diferencia significativa
-entre las los promedios del SAT y la ciudad de residencia. Según los datos
-obtenidos, se puede concluir que la ciudad de residencia de los estudiantes
-influye de manera significativa en el rendimiento promedio del examen SAT.
-Afirmarmand con seguridad que existe una relación entre los promedios SAT y las
-residencias.
+En base a los hallazgos derivados del análisis ANOVA, se puede concluir que la ubicación geográfica de las escuelas en Nueva York tiene una influencia significativa en el rendimiento promedio de los estudiantes en el examen SAT. El estudio revela diferencias estadísticamente significativas entre las puntuaciones SAT y la ciudad de residencia de los estudiantes, señalando que factores asociados con la localización geográfica desempeñan un papel crucial en las disparidades observadas. Esta conclusión sugiere que no todas las ubicaciones geográficas ofrecen el mismo entorno educativo, y factores contextuales relacionados con la ciudad de residencia podrían estar contribuyendo de manera destacada a las variaciones en el rendimiento académico.
 
-Es importante tener en cuenta que aún hay un alto porcentaje de variabilidad que
-no puede ser explicado a partir de la ciudad de residencia. Esto sugiere que
-existen otros factores que también pueden influir en el rendimiento en el examen
-SAT. Por lo tanto, aunque la ciudad de residencia es un factor importante, no es
-el único que determina el rendimiento de los estudiantes en el examen SAT.
+A pesar de la evidente influencia de la ubicación geográfica, es esencial reconocer que existe un alto porcentaje de variabilidad en las puntuaciones SAT que no puede ser completamente explicado por este factor. Esta realidad subraya la complejidad del fenómeno y apunta hacia la existencia de otros factores no abordados en el estudio que también desempeñan un papel determinante en las diferencias de rendimiento. Para comprender plenamente estas variaciones, futuras investigaciones podrían dirigirse hacia la identificación de estos factores adicionales y explorar su contribución al rendimiento en el examen SAT.
 
-Se logra concluir que se ha identificado algunas tendencias y patrones en las
-puntuaciones SAT en función de la ubicación geográfica. Sin embargo, es posible
-que existan otros factores no considerados en este estudio que puedan influir en
-las puntuaciones SAT.
+En última instancia, el reconocimiento de disparidades en las puntuaciones SAT basadas en la ubicación geográfica subraya la necesidad de adoptar un enfoque integral al enfrentar diferencias en el desempeño académico. Este planteamiento va más allá de la educación per se y considera los contextos particulares de las ciudades, examinando su impacto en la accesibilidad a recursos educativos, la excelencia docente y otros factores socioeconómicos que pueden incidir en el éxito estudiantil.
+
+#pagebreak()
+
+== Correlación entre la diversidad étnica y las puntuaciones SAT
+
+Ahora bien, en la exhaustiva investigación sobre la correlación entre la diversidad étnica y las puntuaciones SAT en el contexto de las escuelas de Nueva York, se concluye que existen patrones notables en el rendimiento académico asociados a la composición étnica de los estudiantes. Los resultados revelan una correlación positiva entre las puntuaciones SAT y los porcentajes de estudiantes blancos y asiáticos, indicando que estos grupos étnicos tienden a obtener puntuaciones más altas en el examen. En contraste, se observa una correlación negativa con el porcentaje de estudiantes negros, sugiriendo que este grupo enfrenta desafíos adicionales que pueden reflejarse en puntuaciones más bajas.
+
+Aunque se observe claridad en estas conexiones, es crucial considerar que estas relaciones no son predecibles y pueden ser influidas por diversos factores del entorno. Este estudio subraya la necesidad de un análisis más detenido para comprender la complejidad de las disparidades en la educación y el efecto de la diversidad étnica en el desempeño académico. La exploración de elementos adicionales, como la calidad de la enseñanza, la disponibilidad de recursos y las condiciones socioeconómicas, puede brindar una perspectiva más exhaustiva de la relación entre diversidad étnica y logros académicos.
+
+En definitiva, la detección de estas relaciones indica la relevancia de aplicar tácticas educativas adaptadas para atender las particularidades de cada comunidad étnica. Asimismo, resalta la urgencia de políticas educativas inclusivas que impulsen la igualdad y solventen las desigualdades identificadas, propiciando un entorno académico que respalde el éxito de todos los estudiantes, sin importar su origen étnico.
+
+#pagebreak()
+
+== Exploración de la Relación entre el tamaño de la población estudiantil y las puntuaciones SAT mediante regresión lineal
+
+Con respecto a los análisis basados en técnicas de regresión lineal revelan una relación positiva entre el tamaño de la matrícula estudiantil y las puntuaciones promedio en los exámenes SAT de matemáticas, lectura y escritura. Esta tendencia sugiere que, en promedio, las escuelas con matrículas más grandes pueden experimentar un rendimiento académico mejorado en estas áreas.
+
+Estos resultados reflejan un panorama educativo en el que las escuelas con matrículas más grandes podrían estar potencialmente en una posición ventajosa, ya que parece haber una correlación entre un mayor número de estudiantes y un mejor desempeño académico en múltiples áreas evaluadas.
+
+Aun así, mientras estos hallazgos apuntan hacia una relación positiva entre el tamaño de la matrícula y el rendimiento académico, es importante ejercer cautela en la interpretación de estos resultados. Si bien los datos muestran una tendencia general, no deben pasar por alto las variaciones individuales y los posibles factores de confusión.
+
 
 #pagebreak()
 

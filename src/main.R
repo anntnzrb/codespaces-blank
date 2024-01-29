@@ -4,6 +4,7 @@ library(ggplot2)
 library(readxl)
 library(PerformanceAnalytics)
 
+
 data <- read_csv("./data/nyc_scores.csv")
 
 print(ggplot(data, aes(x = City)) +
@@ -54,3 +55,39 @@ chart.Correlation(data_avg_sat, histogram = FALSE, pch = 5)
 
 resultado_anova <- aov(data$Average_SAT ~ data$City, data = data)
 print(summary(resultado_anova))
+
+model_Math <- lm(Student_Enrollment ~ Average_Score_SAT_Math, data = data )
+model_Reading <- lm(Student_Enrollment ~ Average_Score_SAT_Reading, data = data)
+model_Writing <- lm(Student_Enrollment ~ Average_Score_SAT_Writing, data = data)
+summary(model_Math)
+summary(model_Reading)
+summary(model_Writing)
+
+# Gráfico y predicciones para model_Math
+plot(data$Average_Score_SAT_Math, data$Student_Enrollment, 
+     main = "Regresión Lineal - Math",
+     xlab = "Average Score SAT Math", ylab = "Student Enrollment")
+abline(model_Math, col = "red")
+
+nuevos_datos_math <- data.frame(Average_Score_SAT_Math = runif(100, min = 400, max = 1000))
+predicciones_math <- predict(model_Math, newdata = nuevos_datos_math)
+
+# Gráfico y predicciones para model_Reading
+plot(data$Average_Score_SAT_Reading, data$Student_Enrollment, 
+     main = "Regresión Lineal - Reading",
+     xlab = "Average Score SAT Reading", ylab = "Student Enrollment")
+abline(model_Reading, col = "blue")
+
+nuevos_datos_reading <- data.frame(Average_Score_SAT_Reading = runif(100, min = 400, max = 1000))
+predicciones_reading <- predict(model_Reading, newdata = nuevos_datos_reading)
+
+predicciones_reading # Para ver las predicciones
+
+# Gráfico y predicciones para model_Writing
+plot(data$Average_Score_SAT_Writing, data$Student_Enrollment, 
+     main = "Regresión Lineal - Writing",
+     xlab = "Average Score SAT Writing", ylab = "Student Enrollment")
+abline(model_Writing, col = "green")
+
+nuevos_datos_writing <- data.frame(Average_Score_SAT_Writing = runif(100, min = 400, max = 1000))
+predicciones_writing <- predict(model_Writing, newdata = nuevos_datos_writing)
