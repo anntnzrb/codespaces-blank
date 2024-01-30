@@ -326,4 +326,4 @@ El código fuente de este proyecto se encuentra disponible en el siguiente
 
 #pagebreak()
 
-#bibliography("bib.bib", style: "apa")
+#bibliography("bib.bib", full: true, style: "apa")

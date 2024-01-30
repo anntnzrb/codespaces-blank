@@ -25,7 +25,7 @@
   
   v(15em)
 
-  text(1.1em, "Enero 29, 2024")
+  text(1.1em, "Enero 30, 2024")
   v(1.2em, weak: true)
   text(2em, weight: 700, title)
 
